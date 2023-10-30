@@ -82,4 +82,4 @@
                              (stmts (assign "y" (div (id "x") (num 4)))
                                     (print- (id "y")))))
 
-(defun interp (ast) (trans-stmt ast #'e0))
+(defun interp (ast) (trans-stmt ast env))
